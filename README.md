@@ -1,2 +1,2 @@
 # pianomania
-best piano game ever
+best piano game ever!
