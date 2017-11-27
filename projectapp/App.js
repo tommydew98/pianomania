@@ -4,29 +4,33 @@ import { StackNavigator } from 'react-navigation';
 
 import HomeScreenComponent from './components/HomeScreenComponent';
 import MainGame from './components/MainGame';
+import BackgroundImageComponent from './components/BackgroundImageComponent';
 
 const PianoNavigation = StackNavigator({
-  Home : {
-    screen: HomeScreenComponent
-  },
-  Game: {
-    screen: MainGame
-  },
+    Home: {
+        screen: HomeScreenComponent
+    },
+    Game: {
+        screen: MainGame
+    },
+    BackgroundImage: {
+        screen: BackgroundImageComponent
+    },
 });
 
 export default class App extends Component {
-  render() {
-    return (
-      <PianoNavigation/>
-    );
-  }
+    render() {
+        return (
+            <PianoNavigation/>
+        );
+    }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    container: {
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
 });
