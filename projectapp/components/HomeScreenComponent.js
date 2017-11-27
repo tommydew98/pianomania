@@ -3,20 +3,24 @@ import PropTypes from 'prop-types';
 import { Text, View, Button } from 'react-native';
 
 export default class HomeScreenComponent extends Component {
-	static navigationOptions = {
-		title: 'Welcome'
-	};
-	render() {
-		const {navigate} = this.props.navigation;
-		return(
+    static navigationOptions = {
+        title: 'Welcome'
+    };
+    render() {
+        const {navigate} = this.props.navigation;
+        return (
 
-			<View>
+            <View>
 				<Text>Hello, and welcome</Text>
 				<Button
-					onPress={() => navigate('Game')}
-					title="Play"
-				/>
+            onPress={() => navigate('Game')}
+            title="Play"
+            />
+				<Button
+            onPress={() => navigate('BackgroundImage')}
+            title="Select Background"
+            />
 			</View>
-		);
-	}
+        );
+    }
 }
