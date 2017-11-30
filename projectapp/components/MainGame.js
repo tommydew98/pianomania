@@ -140,7 +140,9 @@ const styles = StyleSheet.create({
 		height: 200,
 		top: 480,
 		position: 'absolute', 
-		backgroundColor: '#ff00ff',
+		backgroundColor: '#fff',
+		borderColor: '#000',
+		borderWidth: 1,
 	},
 	keyD: {
 		width: 60,
@@ -148,7 +150,9 @@ const styles = StyleSheet.create({
 		top: 480,
 		left: 60,
 		position: 'absolute',
-		backgroundColor: '#ffff00',
+		backgroundColor: '#fff',
+		borderColor: '#000',
+		borderWidth: 1,
 	},
 	keyE: {
 		width: 60,
@@ -156,7 +160,9 @@ const styles = StyleSheet.create({
 		top: 480,
 		left: 120,
 		position: 'absolute',
-		backgroundColor: '#ff0000',
+		backgroundColor: '#fff',
+		borderColor: '#000',
+		borderWidth: 1,
 	},
 	keyF: {
 		width: 60,
@@ -164,7 +170,9 @@ const styles = StyleSheet.create({
 		top: 480,
 		left: 180,
 		position: 'absolute',
-		backgroundColor: '#ff00ff',
+		backgroundColor: '#fff',
+		borderColor: '#000',
+		borderWidth: 1,
 	},
 	keyG: {
 		width: 60,
@@ -172,7 +180,9 @@ const styles = StyleSheet.create({
 		top: 480,
 		left: 240,
 		position: 'absolute',
-		backgroundColor: '#ffff00',
+		backgroundColor: '#fff',
+		borderColor: '#000',
+		borderWidth: 1,
 	},
 	keyA: {
 		width: 60,
@@ -180,7 +190,9 @@ const styles = StyleSheet.create({
 		top: 480,
 		left: 300,
 		position: 'absolute',
-		backgroundColor: '#ff0000',
+		backgroundColor: '#fff',
+		borderColor: '#000',
+		borderWidth: 1,
 	},
 	keyB: {
 		width: 60,
@@ -188,7 +200,9 @@ const styles = StyleSheet.create({
 		top: 480,
 		left: 360,
 		position: 'absolute',
-		backgroundColor: '#ff00ff',
+		backgroundColor: '#fff',
+		borderColor: '#000',
+		borderWidth: 1,
 	},
 
 });
