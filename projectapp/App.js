@@ -5,6 +5,7 @@ import { StackNavigator } from 'react-navigation';
 import HomeScreenComponent from './components/HomeScreenComponent';
 import MainGame from './components/MainGame';
 import BackgroundImageComponent from './components/BackgroundImageComponent';
+import LiquidSnake from './components/LiquidSnake';
 
 const PianoNavigation = StackNavigator({
     Home: {
@@ -16,6 +17,9 @@ const PianoNavigation = StackNavigator({
     BackgroundImage: {
         screen: BackgroundImageComponent
     },
+    Liquid: {
+        screen: LiquidSnake
+    }
 });
 
 export default class App extends Component {

@@ -29,6 +29,9 @@ export default class HomeScreenComponent extends Component {
             }
         ).start(() => this.spin())
     }
+    console() {
+        console.log("test");
+    }
 
     render() {
         const {navigate} = this.props.navigation;
@@ -37,8 +40,9 @@ export default class HomeScreenComponent extends Component {
             outputRange: ['0deg', '360deg']
         });
         return (
-
+            
             <View style={styles.container}>
+            <Image style={styles.imageBack} source={{uri:'https://media.giphy.com/media/izCrPHHduwpcQ/giphy.gif'}}/>
                 <Animated.Text
             style={{
                 width: 90,
@@ -50,8 +54,8 @@ export default class HomeScreenComponent extends Component {
                 fontSize: 45,
                 justifyContent: 'center',
                 backgroundColor: 'rgba(255, 255, 255, 0.0)',
-                marginBottom: 50
-
+                marginBottom: 50,
+                color: '#aaa',
             }}
             onPress={() => navigate('Game')}>
                 Play
@@ -66,9 +70,12 @@ export default class HomeScreenComponent extends Component {
             style={styles.button}
             name="dropbox"
             ></Icon>
-            <TouchableHighlight style={styles.touche}>
-            <Text>Hi</Text>
-            </TouchableHighlight>
+            <View style={styles.snake}>
+            <Icon.Button name="inbox" backgroundColor='#AAA' onPress={() => navigate('Liquid')}>
+            Liquid Snake
+            </Icon.Button>
+            </View>
+        
 
 			</View>
         );
@@ -84,5 +91,18 @@ const styles = StyleSheet.create({
         width: 150,
         height: 10,
         backgroundColor: "black"
+    },
+    imageBack: {
+        position: 'absolute',
+        width: 420,
+        height: 700,
+
+    },
+    snake: {
+        position: 'absolute' ,
+        bottom: 5,
+        right: 5,
+
     }
+
 })

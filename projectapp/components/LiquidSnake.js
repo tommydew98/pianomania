@@ -7,9 +7,9 @@ import { ImagePicker } from 'expo';
 
 
 
-export default class MainGame extends Component {
+export default class LiquidSnake extends Component {
     static navigationOptions = {
-        title: 'Piano',
+        title: 'Liquid Snake, Snake??',
         headerStyle: {
             backgroundColor: '#AAA'
         }
@@ -18,25 +18,10 @@ export default class MainGame extends Component {
     constructor() {
         super();
         this.state = {
-            image: 'http://www.amromusic.com/assets/1942/steinway-model-b-ebony-satin-grand-piano-soundboard-plate-strings-tail-inside-view.jpg'
+            image: 'https://media.giphy.com/media/I6sQM3YnBizgQ/giphy.gif'
         }
     }
 
-    _pickImage = async () => {
-        let result = await ImagePicker.launchImageLibraryAsync({
-            allowsEditing: true,
-            aspect: [5, 5],
-        });
-
-        console.log(result);
-
-        if (!result.cancelled) {
-            this.setState({
-                image: result.uri
-            });
-        }
-
-    }
 
 
     playA() {
@@ -138,21 +123,15 @@ export default class MainGame extends Component {
 
         return (
             <View>
-            <Icon.Button onPress={this._pickImage}
-            style={styles.button}
-            name="picture-o"
-            backgroundColor="#111">
-                </Icon.Button>
+            
 
 
-            {!image && <ActivityIndicator />}
-            {image &&
-            <Image source={{
-                uri: image
-            }} style={{
-                width: 420,
-                height: 440
-            }} />}
+                <Image source={{
+                    uri: image
+                }} style={{
+                    width: 420,
+                    height: 490
+                }} />
 
 				<TouchableHighlight style={styles.keyC} onPress={this.playA}>
 					<Text style={styles.pianoText}>A</Text>				
