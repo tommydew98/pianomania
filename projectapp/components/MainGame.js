@@ -38,6 +38,19 @@ export default class MainGame extends Component {
 
     }
 
+    playSong() {
+
+        Expo.Audio.setIsEnabledAsync(true)
+        const soundA = new Expo.Audio.Sound();
+
+        const play_soundA = (async () => {
+
+            await soundA.loadAsync(require('../assets/music2.mp3'));
+            await soundA.playAsync();
+
+        })();
+
+    }
 
     playA() {
 
@@ -143,7 +156,14 @@ export default class MainGame extends Component {
             name="picture-o"
             backgroundColor="#111">
                 </Icon.Button>
-
+            <TouchableHighlight style={{zIndex: 1}}>
+            <Icon onPress={this.playSong}
+            name="play-circle-o"
+            style={styles.playButton}
+            backgroundColor= '#111'>
+            
+            </Icon>
+            </TouchableHighlight>
 
             {!image && <ActivityIndicator />}
             {image &&
@@ -181,6 +201,7 @@ export default class MainGame extends Component {
 }
 
 const styles = StyleSheet.create({
+
     keyC: {
         width: 60,
         height: 200,
@@ -266,6 +287,18 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         paddingTop: 160
 
+    },
+    playButton: {
+        width: 50,
+        height: 50,
+        position: 'absolute',
+        backgroundColor: 'rgba(0, 0, 0, 0)',
+        alignItems: 'center',
+        top: 50,
+        right: 0,
+        zIndex: 1,
+        fontSize: 45,
+        color: '#aaa'
     }
 
 

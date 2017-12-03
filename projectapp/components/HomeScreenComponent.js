@@ -75,6 +75,11 @@ export default class HomeScreenComponent extends Component {
             Liquid Snake
             </Icon.Button>
             </View>
+            <View style={styles.shaq}>
+            <Icon.Button name="inbox" backgroundColor='#AAA' onPress={() => navigate('Shaq')}>
+            Boom Boom
+            </Icon.Button>
+            </View>
         
 
 			</View>
@@ -103,6 +108,11 @@ const styles = StyleSheet.create({
         bottom: 5,
         right: 5,
 
+    },
+    shaq: {
+        position: 'absolute',
+        right: 5,
+        bottom: 60
     }
 
 })

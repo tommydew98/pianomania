@@ -6,6 +6,7 @@ import HomeScreenComponent from './components/HomeScreenComponent';
 import MainGame from './components/MainGame';
 import BackgroundImageComponent from './components/BackgroundImageComponent';
 import LiquidSnake from './components/LiquidSnake';
+import DubStep from './components/DubStep';
 
 const PianoNavigation = StackNavigator({
     Home: {
@@ -19,6 +20,9 @@ const PianoNavigation = StackNavigator({
     },
     Liquid: {
         screen: LiquidSnake
+    },
+    Shaq: {
+        screen: DubStep
     }
 });
 
