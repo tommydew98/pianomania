@@ -31,7 +31,7 @@ export default class LiquidSnake extends Component {
 
         const play_soundA = (async () => {
 
-            await soundA.loadAsync(require('../assets/pianoA.mp3'));
+            await soundA.loadAsync(require('../assets/liquid1.mp3'));
             await soundA.playAsync();
 
         })();
@@ -44,7 +44,7 @@ export default class LiquidSnake extends Component {
 
         const play_soundB = (async () => {
 
-            await soundB.loadAsync(require('../assets/pianoB.mp3'));
+            await soundB.loadAsync(require('../assets/liquid2.mp3'));
             await soundB.playAsync();
 
         })();
@@ -57,7 +57,7 @@ export default class LiquidSnake extends Component {
 
         const play_soundC = (async () => {
 
-            await soundC.loadAsync(require('../assets/pianoC.mp3'));
+            await soundC.loadAsync(require('../assets/liquid3.mp3'));
             await soundC.playAsync();
 
         })();
@@ -70,7 +70,7 @@ export default class LiquidSnake extends Component {
 
         const play_soundD = (async () => {
 
-            await soundD.loadAsync(require('../assets/pianoD.mp3'));
+            await soundD.loadAsync(require('../assets/liquid4.mp3'));
             await soundD.playAsync();
 
         })();
@@ -83,7 +83,7 @@ export default class LiquidSnake extends Component {
 
         const play_soundE = (async () => {
 
-            await soundE.loadAsync(require('../assets/pianoE.mp3'));
+            await soundE.loadAsync(require('../assets/liquid5.mp3'));
             await soundE.playAsync();
 
         })();
@@ -96,7 +96,7 @@ export default class LiquidSnake extends Component {
 
         const play_soundF = (async () => {
 
-            await soundF.loadAsync(require('../assets/pianoF.mp3'));
+            await soundF.loadAsync(require('../assets/liquid6.mp3'));
             await soundF.playAsync();
 
         })();
@@ -109,7 +109,7 @@ export default class LiquidSnake extends Component {
 
         const play_soundG = (async () => {
 
-            await soundG.loadAsync(require('../assets/pianoG.mp3'));
+            await soundG.loadAsync(require('../assets/liquid7.mp3'));
             await soundG.playAsync();
 
         })();
