@@ -7,6 +7,8 @@ import MainGame from './components/MainGame';
 import BackgroundImageComponent from './components/BackgroundImageComponent';
 import LiquidSnake from './components/LiquidSnake';
 import DubStep from './components/DubStep';
+import SoundEffects from './components/SoundEffects';
+import GameSounds from './components/GameSounds';
 
 const PianoNavigation = StackNavigator({
     Home: {
@@ -23,6 +25,12 @@ const PianoNavigation = StackNavigator({
     },
     Shaq: {
         screen: DubStep
+    },
+    SE: {
+        screen: SoundEffects
+    },
+    GSounds: {
+        screen: GameSounds
     }
 });
 

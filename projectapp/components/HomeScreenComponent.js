@@ -40,9 +40,11 @@ export default class HomeScreenComponent extends Component {
             outputRange: ['0deg', '360deg']
         });
         return (
-            
+
             <View style={styles.container}>
-            <Image style={styles.imageBack} source={{uri:'https://media.giphy.com/media/izCrPHHduwpcQ/giphy.gif'}}/>
+            <Image style={styles.imageBack} source={{
+                uri: 'https://media.giphy.com/media/izCrPHHduwpcQ/giphy.gif'
+            }}/>
                 <Animated.Text
             style={{
                 width: 90,
@@ -61,15 +63,17 @@ export default class HomeScreenComponent extends Component {
                 Play
                 </Animated.Text>
 
-                <Icon
-            style={styles.button}
-            name="tint"
-            backgroundColor="#111">
-                </Icon>
-                <Icon
-            style={styles.button}
-            name="dropbox"
-            ></Icon>
+
+            <View style={styles.soundeffects}>   
+            <Icon.Button name="music" backgroundColor='#ACA' onPress={() => navigate('SE')}>
+            Sound Effects
+            </Icon.Button>
+            </View>
+            <View style={styles.gamesound}>
+            <Icon.Button name="gamepad" backgroundColor='#AAF' onPress={() => navigate('GSounds')}>
+            Game Sounds
+            </Icon.Button>
+            </View>
             <View style={styles.snake}>
             <Icon.Button name="inbox" backgroundColor='#AAA' onPress={() => navigate('Liquid')}>
             Liquid Snake
@@ -104,7 +108,7 @@ const styles = StyleSheet.create({
 
     },
     snake: {
-        position: 'absolute' ,
+        position: 'absolute',
         bottom: 5,
         right: 5,
 
@@ -113,6 +117,12 @@ const styles = StyleSheet.create({
         position: 'absolute',
         right: 5,
         bottom: 60
+    },
+    gamesound: {
+        margin: 10
+    },
+    soundeffects: {
+        margin: 10
     }
 
 })
